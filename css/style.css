@@ -124,7 +124,11 @@ select:focus {
 
 #cancel-edit-btn {
   margin-top: 1rem;
-  color: #444;
+  color: #fdfdfd;
+}
+
+#cancel-edit-btn:hover {
+  color: #0e3248;
 }
 
 #toolbar {

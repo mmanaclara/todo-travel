@@ -59,9 +59,20 @@ document.addEventListener("click", (e) => {
     const parentEl = targetEl.closest("div")
 
     if (targetEl.classList.contains("finish-todo")) {
-
-        console.log("Finalizado!")
-
         parentEl.classList.toggle("done")
+    }
+
+    if (targetEl.classList.contains("edit-todo")) {
+        editForm.classList.remove("hide")
+        todoForm.classList.add("hide")
+    }
+
+    if (targetEl.classList.contains("cancel-edit-btn")) {
+        console.log("Cancelar!")
+    }
+
+    if (targetEl.classList.contains("remove-todo")) {
+        parentEl.remove()
+        console.log("Excluiu!")
     }
 })
