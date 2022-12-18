@@ -192,3 +192,23 @@ select:focus {
   text-decoration: line-through;
   font-style: italic;
 }
+
+@media (max-width: 500px) {
+  .todo-container {
+    margin-inline: 1.5rem;
+  }
+  #toolbar {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  #search {
+    border-right: 0;
+    padding-right: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  #filter {
+    width: 100%;
+  }
+}
